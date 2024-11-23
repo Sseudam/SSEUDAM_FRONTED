@@ -1,9 +1,12 @@
-import React from 'react';
+import React from "react";
+import { Logo } from "../../assets/Logo";
 
 const Splash = () => {
   return (
-    <div className=''>
-      
+    <div className="w-full h-full flex items-center justify-center">
+      <div className="">
+        <Logo />
+      </div>
     </div>
   );
 };
