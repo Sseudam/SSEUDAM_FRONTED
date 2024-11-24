@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../../components/Header";
-import sad from "../../assets/sad.png";
+import happy from "../../assets/happy.png";
 
 const Fail = () => {
     const handleRedirect = () => {
@@ -11,13 +11,13 @@ const Fail = () => {
             <Header />
             <div className="flex flex-col items-center">
                 <p className="text-[22px] font-bold text-gray-900 mb-2">
-                    오답이에요.
+                    정답이에요!
                 </p>
                 <p className="text-[16px] text-gray-500 text-center w-[260px] mb-6">
                     우유팩은 특수 코팅이 되어 있어 종이와 별도로 배출해야
                     합니다.
                 </p>
-                <img src={sad} className="w-40 h-40 mb-10" />
+                <img src={happy} className="w-40 h-40 mb-10" />
             </div>
 
             <button

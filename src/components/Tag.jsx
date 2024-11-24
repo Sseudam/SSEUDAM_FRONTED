@@ -7,6 +7,9 @@ const Tag = ({ label, type }) => {
     종이: "bg-red-100 text-red-600",
     유리: "bg-green-100 text-green-600",
     일반쓰레기: "bg-gray-400 text-white",
+    비닐: "bg-yellow-100 text-yellow-600",
+    기름종이: "bg-orange-100 text-orange-600",
+    라벨지: "bg-purple-100 text-purple-600",
   };
 
   return (

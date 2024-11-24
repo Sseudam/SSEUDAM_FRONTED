@@ -34,11 +34,12 @@ const Detail = () => {
           ))}
         </div>
 
-        <h2 className="text-xl font-bold text-gray-900 text-center mb-6">
+        <h2 className="text-xl font-bold text-gray-900 text-center mb-2">
           {item.name}
         </h2>
+        <hr/>
 
-        <div className="space-y-4">
+        <div className="space-y-4 mt-4">
           {item.tags.map((tag, index) => (
             <div key={index}>
               <p className="text-[16px] font-bold text-gray-800 mb-1">{tag}</p>
