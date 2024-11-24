@@ -12,6 +12,8 @@ function App() {
         <Route path="/" element={<Splash />} />
         <Route path="/home" element={<Home />} />
         <Route path="/test" element={<Test />} />
+        <Route path="/test/fail" element={<Test />} />
+        <Route path="/test/success" element={<Test />} />
       </Routes>
     </Router>
   );

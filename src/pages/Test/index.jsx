@@ -6,25 +6,7 @@ import X from '../../assets/X';
 const Test = () => {
   return (
     <div className="bg-white min-h-screen px-4 py-6 flex flex-col items-start">
-      {/* Header */}
-      <div className="flex justify-between items-center w-full mb-6">
-        <button>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6 text-gray-800"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15.75 19.5L8.25 12l7.5-7.5"
-            />
-          </svg>
-        </button>
-      </div>
+      
 
       <div className="items-start my-8 text-left">
         <img src={trashImage} className="w-[64px]" />
