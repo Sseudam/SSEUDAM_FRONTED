@@ -5,6 +5,8 @@ import Splash from './pages/splash/index.jsx';
 import Home from './pages/home/index.jsx';
 import Test from './pages/Test/index.jsx';
 import Fail from './pages/fail/index.jsx';
+import Success from './pages/success/index.jsx';
+import Detail from './pages/detail/index.jsx';
 
 function App() {
   return (
@@ -14,7 +16,8 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/test" element={<Test />} />
         <Route path="/test/fail" element={<Fail />} />
-        <Route path="/test/success" element={<Test />} />
+        <Route path="/test/success" element={<Success />} />
+        <Route path="/detail/:id" element={<Detail />} />
       </Routes>
     </Router>
   );
