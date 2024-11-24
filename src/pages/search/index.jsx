@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import ItemsData from "../../data/ItemsData";
 import Tag from "../../components/Tag";
 import SearchIcon from "../../assets/SearchIcon";
+import Header from "../../components/Header";
 
 const Search = () => {
   const [query, setQuery] = useState("");
@@ -14,6 +15,7 @@ const Search = () => {
 
   return (
     <div className="bg-white min-h-screen px-4 py-6">
+      <Header title='검색'/>
       <div className="flex items-center bg-gray-100 rounded-[12px] px-4 py-3 mb-6">
         <SearchIcon/>
         <input

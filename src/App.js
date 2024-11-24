@@ -8,6 +8,7 @@ import Fail from './pages/fail/index.jsx';
 import Success from './pages/success/index.jsx';
 import Detail from './pages/detail/index.jsx';
 import Search from './pages/search/index.jsx'
+import Scan from './pages/scan/index.jsx';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/test/success" element={<Success />} />
         <Route path="/detail/:id" element={<Detail />} />
         <Route path="/home/search" element={<Search />} />
+        <Route path="/scan" element={<Scan />} />
       </Routes>
     </Router>
   );
