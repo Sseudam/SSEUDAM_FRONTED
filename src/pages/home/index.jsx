@@ -23,14 +23,14 @@ const Home = () => {
         </p>
       </div>
       <SearchBar />
-      <h2 className="text-lg font-semibold text-gray-900 mb-4">
+      <h2 className="text-lg font-bold text-gray-900 mb-2.5">
         최근 조회한 분리수거
       </h2>
       <div className="grid grid-cols-2 gap-4">
         {ItemData.map((item) => (
           <div
             key={item.id}
-            className="rounded-lg border border-gray-200 p-4 flex flex-col items-center"
+            className="rounded-lg border border-gray-200 p-2.5 flex flex-col items-center"
           >
             <img
               src={item.image}
@@ -39,7 +39,7 @@ const Home = () => {
             <p className="text-sm font-medium text-gray-800 mb-2">
               {item.name}
             </p>
-            <div className="flex gap-2 flex-wrap justify-center">
+            <div className="flex gap-1 flex-wrap justify-start">
               {item.tags.map((tag, index) => (
                 <Tag key={index} label={tag} type={tag} />
               ))}
