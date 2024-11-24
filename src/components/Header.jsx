@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Header = ({ title }) => {
+const Header = () => {
   const navigate = useNavigate();
 
   return (
@@ -22,7 +22,6 @@ const Header = ({ title }) => {
           />
         </svg>
       </button>
-      {title && <h1 className="text-lg font-semibold">{title}</h1>}
     </div>
   );
 };

@@ -15,7 +15,7 @@ const Search = () => {
 
   return (
     <div className="bg-white min-h-screen px-4 py-6">
-      <Header title='검색'/>
+      <Header />
       <div className="flex items-center bg-gray-100 rounded-[12px] px-4 py-3 mb-6">
         <SearchIcon/>
         <input

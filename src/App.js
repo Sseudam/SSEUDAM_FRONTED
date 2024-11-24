@@ -17,8 +17,8 @@ function App() {
         <Route path="/" element={<Splash />} />
         <Route path="/home" element={<Home />} />
         <Route path="/test" element={<Test />} />
-        <Route path="/test/fail" element={<Fail />} />
-        <Route path="/test/success" element={<Success />} />
+        <Route path="/fail" element={<Fail />} />
+        <Route path="/success" element={<Success />} />
         <Route path="/detail/:id" element={<Detail />} />
         <Route path="/home/search" element={<Search />} />
         <Route path="/scan" element={<Scan />} />
