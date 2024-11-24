@@ -2,12 +2,12 @@ import React from "react";
 import trashImage from '../../assets/trash.png'
 import O from '../../assets/O';
 import X from '../../assets/X';
+import Header from "../../components/Header";
 
 const Test = () => {
   return (
     <div className="bg-white min-h-screen px-4 py-6 flex flex-col items-start">
-      
-
+      <Header/>
       <div className="items-start my-8 text-left">
         <img src={trashImage} className="w-[64px]" />
         <p className="text-[22px] w-[310px] font-bold text-gray-900">

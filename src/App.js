@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Splash from './pages/splash/index.jsx';
 import Home from './pages/home/index.jsx';
 import Test from './pages/Test/index.jsx';
+import Fail from './pages/fail/index.jsx';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Route path="/" element={<Splash />} />
         <Route path="/home" element={<Home />} />
         <Route path="/test" element={<Test />} />
-        <Route path="/test/fail" element={<Test />} />
+        <Route path="/test/fail" element={<Fail />} />
         <Route path="/test/success" element={<Test />} />
       </Routes>
     </Router>
