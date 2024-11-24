@@ -4,8 +4,8 @@ import ItemsData from "../../data/ItemsData";
 import Header from "../../components/Header";
 
 const Detail = () => {
-  const { id } = useParams(); // URL에서 id 가져오기
-  const item = ItemsData.find((data) => data.id === parseInt(id)); // id로 데이터 필터링
+  const { id } = useParams();
+  const item = ItemsData.find((data) => data.id === parseInt(id));
 
   if (!item) {
     return (
@@ -17,12 +17,9 @@ const Detail = () => {
 
   return (
     <div className="bg-white min-h-screen px-4 py-6">
-      {/* Header */}
       <Header />
 
-      {/* Content */}
       <div className="mt-4">
-        {/* 이미지 */}
         <div className="flex justify-center mb-6">
           <img
             src={item.image}

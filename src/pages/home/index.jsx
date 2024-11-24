@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Logo from "../../assets/Logo";
 import Barcode from "../../assets/Barcode";
 import SearchBar from "../../components/SearchBar";
@@ -7,14 +8,16 @@ import ItemData from "../../data/ItemsData";
 import trashImage from "../../assets/trash.png";
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-white w-full px-5 py-6">
       <div className="flex justify-between items-center mb-5">
-        <Logo width="114px" height="34px"/>
+        <Logo width="114px" height="34px" />
         <Barcode />
       </div>
       <div className="bg-gray-100 rounded-[12px] p-4 mb-3 flex flex-col items-center">
-        <img src={trashImage} className="mb-2 w-[34px]" />
+        <img src={trashImage} className="mb-2 w-[34px]" alt="trash" />
         <p className="text-[15px] font-semibold text-gray-900 mb-1 text-center">
           오늘의 분리수거 퀴즈
         </p>
@@ -30,11 +33,13 @@ const Home = () => {
         {ItemData.map((item) => (
           <div
             key={item.id}
-            className="rounded-lg border border-gray-200 p-2.5 flex flex-col items-start"
+            className="rounded-lg border border-gray-200 p-2.5 flex flex-col items-start cursor-pointer"
+            onClick={() => navigate(`/detail/${item.id}`)}
           >
             <img
               src={item.image}
               className="w-full h-auto aspect-square mb-3"
+              alt={item.name}
             />
             <p className="text-sm font-medium text-gray-800 mb-2">
               {item.name}
