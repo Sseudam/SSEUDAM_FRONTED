@@ -13,7 +13,7 @@ const Home = () => {
         <Logo width="114px" height="34px"/>
         <Barcode />
       </div>
-      <div className="bg-gray-100 rounded-[12px] p-4 mb-[10px] flex flex-col items-center">
+      <div className="bg-gray-100 rounded-[12px] p-4 mb-3 flex flex-col items-center">
         <img src={trashImage} className="mb-2 w-[34px]" />
         <p className="text-[15px] font-semibold text-gray-900 mb-1 text-center">
           오늘의 분리수거 퀴즈
@@ -30,11 +30,11 @@ const Home = () => {
         {ItemData.map((item) => (
           <div
             key={item.id}
-            className="rounded-lg border border-gray-200 p-2.5 flex flex-col items-center"
+            className="rounded-lg border border-gray-200 p-2.5 flex flex-col items-start"
           >
             <img
               src={item.image}
-              className="h-24 mb-3"
+              className="w-full h-auto aspect-square mb-3"
             />
             <p className="text-sm font-medium text-gray-800 mb-2">
               {item.name}
