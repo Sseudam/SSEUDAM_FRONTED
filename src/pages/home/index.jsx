@@ -27,7 +27,7 @@ const Home = () => {
       </div>
       <SearchBar />
       <h2 className="text-lg font-bold text-gray-900 mb-2.5">
-        최근 조회한 분리수거
+        오늘도 환경을 위한 분리수거!
       </h2>
       <div className="grid grid-cols-2 gap-4">
         {ItemData.map((item) => (
