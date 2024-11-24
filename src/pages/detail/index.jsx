@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import ItemsData from "../../data/ItemsData";
 import Header from "../../components/Header";
+import Tag from "../../components/Tag";
 
 const Detail = () => {
   const { id } = useParams();
@@ -18,7 +19,6 @@ const Detail = () => {
   return (
     <div className="bg-white min-h-screen px-4 py-6">
       <Header />
-
       <div className="mt-4">
         <div className="flex justify-center mb-6">
           <img
@@ -28,39 +28,21 @@ const Detail = () => {
           />
         </div>
 
-        {/* 태그 */}
         <div className="flex justify-center gap-2 mb-4">
           {item.tags.map((tag, index) => (
-            <span
-              key={index}
-              className={`text-xs font-medium px-2 py-1 rounded ${
-                tag === "플라스틱"
-                  ? "bg-blue-100 text-blue-600"
-                  : tag === "알루미늄"
-                  ? "bg-gray-100 text-gray-600"
-                  : tag === "종이"
-                  ? "bg-red-100 text-red-600"
-                  : tag === "일반쓰레기"
-                  ? "bg-gray-800 text-white"
-                  : "bg-green-100 text-green-600"
-              }`}
-            >
-              {tag}
-            </span>
+            <Tag key={index} label={tag} type={tag} />
           ))}
         </div>
 
-        {/* 이름 */}
         <h2 className="text-xl font-bold text-gray-900 text-center mb-6">
           {item.name}
         </h2>
 
-        {/* 분리배출 방법 */}
         <div className="space-y-4">
           {item.tags.map((tag, index) => (
             <div key={index}>
-              <p className="text-sm font-bold text-gray-800 mb-1">{tag}</p>
-              <p className="text-sm text-gray-600">
+              <p className="text-[16px] font-bold text-gray-800 mb-1">{tag}</p>
+              <p className="text-[14px] text-gray-600">
                 내용물을 비운 후 깨끗하게 헹군 뒤 {tag}으로 배출하세요
               </p>
             </div>
