@@ -24,7 +24,7 @@ const Success = () => {
                 onClick={handleRedirect}
                 className="mb-8 bg-[#6804FF] text-white text-base font-semibod py-3 px-6 rounded-lg w-full"
             >
-                확안
+                확인
             </button>
         </div>
     );
